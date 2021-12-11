@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="bola">
+        </div>
+
+        <div class="menu">
+            <img src="logo (2).png" alt="Logo da empresa" id="logo">
+
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">sobre</a></li>
+                    <li><a href="#">contato</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="container">
+            <div class="box-text">
+                <h1>O melhor café do mundo <p>esta aqui no nosso <span>coffe</span></p></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem amet cupiditate perspiciatis sed vero illum dolor eveniet ipsum provident, minus ipsa cum omnis natus unde quo nemo nihil magni vel? Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ut molestias assumenda amet facilis, animi et, fugit, officiis recusandae aut consectetur aspernatur consequuntur eveniet perferendis excepturi debitis nobis quas ab.</p>
+                
+                <button>Learn more</button>
+            </div>
+
+            <div class="box-img">
+                <img src="img1.png" alt="Café de chocolate" id="img-principal">
+            </div>
+        </div>
+
+        <aside>
+            <img src="thumb1.png" alt="" onclick="mudaImg('img1.png', 'green')">
+            <img src="thumb2.png" alt="" onclick="mudaImg('img2.png', 'pink')">
+            <img src="thumb3.png" alt="" onclick="mudaImg('img3.png', 'plum')">
+        </aside>
+    </header>
+
+
+    <script>
+        var img1 = document.getElementById("img-principal")
+        var boll = document.getElementById("bola")
+
+        function mudaImg(imagem, cor){
+            img1.src=imagem;
+            boll.style.backgroundColor=cor
+        }
+
+    </script>
+</body>
+</html>
