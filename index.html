@@ -5,16 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafeteria</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,500;1,900&display=swap" rel="stylesheet"> 
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 <body>
     <header>
-        <div id="bola">
-        </div>
-
-        <div class="menu">
-            <img src="logo (2).png" alt="Logo da empresa" id="logo">
-
+        <div class="container">
+            <img src="imgs/logo (2).png" alt="Logo da empresa" id="logo">
+            
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -24,37 +27,45 @@
                 </ul>
             </nav>
         </div>
+    </header>
 
+    <main>
         <div class="container">
             <div class="box-text">
-                <h1>O melhor café do mundo <p>esta aqui no nosso <span>coffe</span></p></h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem amet cupiditate perspiciatis sed vero illum dolor eveniet ipsum provident, minus ipsa cum omnis natus unde quo nemo nihil magni vel? Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ut molestias assumenda amet facilis, animi et, fugit, officiis recusandae aut consectetur aspernatur consequuntur eveniet perferendis excepturi debitis nobis quas ab.</p>
-                
+                <h1>It's not just coffee <p>It's <span>Starbucks</span></p></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem amet cupiditate perspiciatis sed vero illum dolor eveniet ipsum provident, minus ipsa cum omnis natus unde quo nemo nihil magni vel? Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ut molestias assumenda amet facilis.</p>
+        
                 <button>Learn more</button>
             </div>
 
             <div class="box-img">
-                <img src="img1.png" alt="Café de chocolate" id="img-principal">
+                <img src="imgs/img1.png" alt="Café de chocolate" id="img-principal">
             </div>
+
+            <aside>
+                <img src="imgs/thumb1.png" alt="" onclick="mudaImg('imgs/img1.png', 'green')">
+                <img src="imgs/thumb2.png" alt="" onclick="mudaImg('imgs/img2.png', 'pink')">
+                <img src="imgs/thumb3.png" alt="" onclick="mudaImg('imgs/img3.png', 'plum')">
+            </aside>
         </div>
 
-        <aside>
-            <img src="thumb1.png" alt="" onclick="mudaImg('img1.png', 'green')">
-            <img src="thumb2.png" alt="" onclick="mudaImg('img2.png', 'pink')">
-            <img src="thumb3.png" alt="" onclick="mudaImg('img3.png', 'plum')">
-        </aside>
-    </header>
+        <div id="bola">
+        </div>
+    </main>
 
 
     <script>
-        var img1 = document.getElementById("img-principal")
-        var boll = document.getElementById("bola")
+        var img1 = document.getElementById("img-principal");
+        var boll = document.getElementById("bola");
 
         function mudaImg(imagem, cor){
             img1.src=imagem;
-            boll.style.backgroundColor=cor
+            boll.style.backgroundColor=cor;
         }
 
     </script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

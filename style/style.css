@@ -1,0 +1,113 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+header {
+  width: 100%;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+header #logo {
+  width: 70px;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 0 20px;
+}
+header ul a {
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+header ul a:hover {
+  color: green;
+  opacity: 0.5;
+}
+
+main {
+  position: relative;
+  overflow: hidden;
+  height: 85.3vh;
+}
+main .container {
+  position: relative;
+}
+main .container .box-text {
+  padding-top: 70px;
+}
+main .container .box-text h1 {
+  font-size: 7rem;
+}
+main .container .box-text h1 p {
+  font-size: 7rem;
+}
+main .container .box-text h1 span {
+  color: green;
+  font-size: 8rem;
+  font-weight: 800;
+}
+main .container .box-text p {
+  font-size: 1.2rem;
+  max-width: 650px;
+  text-align: justify;
+}
+main .container .box-text button {
+  width: 150px;
+  padding: 10px 0;
+  border: none;
+  margin-top: 5px;
+  border-radius: 25px;
+  color: white;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  background-color: green;
+}
+main .container .box-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+}
+main .container .box-img img {
+  width: 340px;
+}
+main aside {
+  width: 100%;
+  position: absolute;
+  bottom: -150px;
+  display: flex;
+  justify-content: center;
+}
+main aside img {
+  width: 125px;
+  padding: 10px;
+  cursor: pointer;
+}
+main aside img:hover {
+  transform: translatey(-20px);
+}
+
+#bola {
+  position: absolute;
+  top: 152px;
+  right: 0;
+  width: 1200px;
+  height: 1200px;
+  background-color: green;
+  -webkit-clip-path: circle(480px at 1105px 480px);
+          clip-path: circle(480px at 1105px 480px);
+  z-index: -1;
+}/*# sourceMappingURL=style.css.map */

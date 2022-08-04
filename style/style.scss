@@ -1,0 +1,133 @@
+$corPrincipal: green;
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 10px;
+}
+
+header{
+    width: 100%;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    #logo{
+        width: 70px;
+    }
+
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 0 20px;
+
+        a{
+            text-decoration: none;
+            color: black;
+            text-transform: capitalize;
+
+            font: {
+                size: 2rem;
+            }
+            &:hover{
+                color: $corPrincipal;
+                opacity: 0.5;
+            }            
+        }   
+    }
+}
+
+
+main{
+    position: relative;
+    overflow: hidden;
+    height: 85.3vh;
+
+    .container{
+        position: relative;
+
+    .box-text{
+        padding-top: 70px;
+
+        h1{
+            font-size: 7rem;
+    
+            p{
+                font-size: 7rem;
+            }
+            span{
+                color: $corPrincipal;
+                font-size: 8rem;
+                font-weight: 800;
+            }
+        }
+        p{
+            font-size: 1.2rem;
+            max-width: 650px;
+            text-align: justify;
+        }
+        button{
+            width: 150px;
+            padding: 10px 0;
+            border: none;
+            margin-top: 5px;
+            border-radius: 25px;
+            color: white;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            background-color: $corPrincipal;
+        }
+    }
+
+    .box-img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        
+        img{
+            width: 340px;
+        }
+    }
+}
+
+aside{
+    width: 100%;
+    position: absolute;
+    bottom: -150px;
+    display: flex;
+    justify-content: center;
+
+    img{
+        width: 125px;
+        padding: 10px;
+        cursor: pointer;
+
+        &:hover{
+            transform: translatey(-20px);
+        }
+    }
+}
+}
+
+#bola{   
+    position: absolute;
+    top: 152px;
+    right: 0;
+    width: 1200px;
+    height: 1200px;
+    background-color: $corPrincipal;
+    //clip-path: circle(36% at 90% 500px);
+    clip-path: circle(480px at 1105px 480px);
+    z-index: -1;
+}
